@@ -1,0 +1,11 @@
+mat-icon {
+    color: silver;
+
+    &.active {
+        color: red;
+    }
+}
+
+mat-icon + mat-icon {
+    margin-left: 0.5em;
+}

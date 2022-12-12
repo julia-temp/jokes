@@ -1,0 +1,25 @@
+<mat-icon title="NSFW"
+          fontIcon="warning"
+          [class.active]="joke.flags.nsfw"
+          *ngIf="showALl || joke.flags.nsfw"
+></mat-icon>
+<mat-icon title="Religious"
+          fontIcon="church"
+          [class.active]="joke.flags.religious"
+          *ngIf="showALl || joke.flags.religious"
+></mat-icon>
+<mat-icon title="Political"
+          fontIcon="error_circle_rounded"
+          [class.active]="joke.flags.political"
+          *ngIf="showALl || joke.flags.political"
+></mat-icon>
+<mat-icon title="Racist"
+          fontIcon="group"
+          [class.active]="joke.flags.racist"
+          *ngIf="showALl || joke.flags.racist"
+></mat-icon>
+<mat-icon title="Sexist"
+          fontIcon="transgender"
+          [class.active]="joke.flags.sexist"
+          *ngIf="showALl || joke.flags.sexist"
+></mat-icon>

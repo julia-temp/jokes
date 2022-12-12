@@ -1,0 +1,11 @@
+<mat-card [class.slim]="slim">
+    <img mat-card-image [src]="joke.imageUrl" />
+    <mat-card-content>
+        <p>{{ joke.setup || joke.joke }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <app-joke-flags [joke]="joke"></app-joke-flags>
+        <div class="spacer"></div>
+        <button mat-button (click)="openJoke(joke)">Open</button>
+    </mat-card-actions>
+</mat-card>
